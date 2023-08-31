@@ -82,3 +82,18 @@ p {
   color: blueviolet;
   background-color: chartreuse;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo_group:hover::before {
+    animation: logo-spin infinite 700ms linear;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
