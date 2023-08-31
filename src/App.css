@@ -1,3 +1,7 @@
+:root {
+  --acent-color: #ff868e;
+}
+
 .App {
   text-align: center;
 }

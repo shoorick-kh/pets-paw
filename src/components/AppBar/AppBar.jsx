@@ -1,4 +1,4 @@
-// import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import s from './AppBar.module.css';
 
 export default function AppBar() {
@@ -17,18 +17,27 @@ export default function AppBar() {
       <div>
         <ul className={s.menu}>
           <li>
-            <button className={s.button_menu}>Voting</button>
+            <NavLink to="/voting">
+              <button type="button" className={s.button_menu}>
+                Voting
+              </button>
+            </NavLink>
           </li>
           <li>
-            <button className={s.button_menu}>Breeds</button>
+            <NavLink to="/breeds">
+              <button type="button" className={s.button_menu}>
+                Breeds
+              </button>
+            </NavLink>
           </li>
           <li>
-            <button className={s.button_menu}>Gallery</button>
+            <NavLink to="gallery">
+              <button type="button" className={s.button_menu}>
+                Gallery
+              </button>
+            </NavLink>
           </li>
         </ul>
-        {/* <NavLink to="/voting">Voting</NavLink> */}
-        {/* <NavLink to="/breeds">Breeds</NavLink> */}
-        {/* <NavLink to="gallery">Gallery</NavLink> */}
       </div>
     </div>
   );
